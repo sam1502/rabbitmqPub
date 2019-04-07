@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Start-Class: com.rabbitmq.rabbitmqPub.RabbitmqPubApplication
+Main-Class: org.springframework.boot.loader.JarLauncher
+

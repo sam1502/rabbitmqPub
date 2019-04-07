@@ -1,0 +1,7 @@
+queue:
+  name: post_messages
+  exchange-name: myExcahnge
+  excahnge-type: direct
+  routing-key: routingKey
+
+logging.level.org.springframework.web: DEBUG
