@@ -48,7 +48,7 @@ cmake-build-*/
 
 # IntelliJ
 out/
-/build/
+/build
 /.gradle/
 
 
