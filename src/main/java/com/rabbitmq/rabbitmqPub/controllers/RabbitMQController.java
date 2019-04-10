@@ -2,6 +2,7 @@ package com.rabbitmq.rabbitmqPub.controllers;
 
 
 import com.rabbitmq.rabbitmqPub.services.RabbitMQPubService;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -18,12 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("queue")
 public class RabbitMQController {
 
-    RabbitMQPubService rabbitMQPubService;
-
-    @Autowired
-    public RabbitMQController(RabbitMQPubService rabbitMQPubService) {
-        this.rabbitMQPubService = rabbitMQPubService;
-    }
+   @Autowired
+   RabbitMQPubService rabbitMQPubService;
 
     @PostMapping("post/{message}")
     public ResponseEntity<String> publisher(@PathVariable("message") String message) {
